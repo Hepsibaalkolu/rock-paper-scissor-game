@@ -37,10 +37,7 @@ app.get("/api/scores/highest", async (req, res) => {
   
 // Database connection
 mongoose
-  .connect("mongodb://127.0.0.1:27017/rock-paper-scissors", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
+  .connect("mongodb://127.0.0.1:27017/rock-paper-scissors")
   .then(() => {
     console.log("Connected to MongoDB");
     app.listen(PORT, () => {
