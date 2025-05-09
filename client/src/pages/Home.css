@@ -1,0 +1,60 @@
+/* Style for the Home page */
+.home {
+    background: linear-gradient(135deg, #FFD700, #FF6347); /* Beautiful gradient background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+    padding: 20px;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .home h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #2B2B2B; /* Dark color for contrast */
+  }
+  
+  .play-btn {
+    font-size: 1.5rem;
+    padding: 20px 40px;
+    background-color: #2B2B2B; /* Dark background for the button */
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: transform 0.2s, background-color 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .play-btn:hover {
+    background-color: #FFD700; /* Light up button when hovered */
+    transform: scale(1.1);
+    color: #2B2B2B; /* Change text color to match the dark theme */
+  }
+  
+  .play-btn:active {
+    background-color: #FF6347; /* Darker color when button is clicked */
+    transform: scale(1.05);
+  }
+  
+  .home h2 {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Adding a shadow to make the text stand out */
+  }
+  
+  @media (max-width: 768px) {
+    .home h2 {
+      font-size: 2rem; /* Adjust text size for smaller screens */
+    }
+  
+    .play-btn {
+      font-size: 1.2rem; /* Adjust button size for smaller screens */
+      padding: 15px 30px;
+    }
+  }
+  

@@ -1,0 +1,61 @@
+/* Style for the Help page */
+.help {
+    background: linear-gradient(135deg, #FF6347, #FFD700); /* Vibrant gradient background */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Aligns content vertically */
+    align-items: center; /* Aligns content horizontally */
+    height: 100vh; /* Full height of the viewport */
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .help h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+    color: #2B2B2B;
+  }
+  
+  .instructions {
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for contrast */
+    border-radius: 20px;
+    padding: 30px;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(0); /* Ensure it’s not upside down */
+  }
+  
+  .instructions p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .instructions p strong {
+    font-size: 1.6rem;
+    color: #FF6347; /* Highlight important points in a bright color */
+  }
+  
+  @media (max-width: 768px) {
+    .help h2 {
+      font-size: 2.2rem; /* Adjust text size for smaller screens */
+    }
+  
+    .instructions {
+      width: 90%; /* More width for smaller screens */
+      padding: 20px;
+    }
+  
+    .instructions p {
+      font-size: 1.2rem; /* Smaller text size for mobile */
+    }
+  }
+  
